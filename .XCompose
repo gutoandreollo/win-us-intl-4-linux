@@ -2,8 +2,9 @@
 # ~/.XCompose
 #   To change the US International keyboard layout to behave like the
 #   Microsoft Windows (TM) version of the layout
-# version: 0.2 edit 6 (20110403-6)
-# by @tamh [48bytes at gmail com]
+# version: 0.3 edit 6 (20140328)
+# edited by: @rael_gc [rael.gc at gmail com]
+# original by @tamh [48bytes at gmail com]
 #
 # Released under LGPL v2.1. Please refer to it by going to:
 # <http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html>
@@ -92,8 +93,10 @@ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
 <dead_acute> <dead_acute> : "''"
 <dead_acute> <dead_grave> : "'`"
 <dead_acute> <dead_diaeresis> : "'\""
-<dead_acute> <circumflex> : "'^"
-<dead_acute> <tilde> : "'~"
+
+# Edit 7: Fixing warning for <tilde> and <circumflex>
+<dead_acute> <dead_circumflex> : "'^"
+<dead_acute> <dead_tilde> : "'~"
 
 # Edit 6: Adding the other combinations Windows deems correct.
 <dead_acute> <exclam> : "'!"
